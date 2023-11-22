@@ -232,7 +232,7 @@ def check_bitsandbytes():
                 print("Installing bitsandbytes")
                 try:
                     pip_install(
-                                "--prefer-binary", "https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-any.whl")
+                                "--prefer-binary", "https://files.pythonhosted.org/packages/1e/2c/af22cd797fc368a9f098ed03015730e6568b884fe67f9940793d944a4b7b/bitsandbytes-0.41.1-py3-none-any.whl")
                 except Exception as e:
                     print("Bitsandbytes 0.41.1 installation failed")
                     print("Some features such as 8bit optimizers will be unavailable")
@@ -243,7 +243,7 @@ def check_bitsandbytes():
         if bitsandbytes_version != "0.41.1":
             try:
                 print("Installing bitsandbytes")
-                pip_install("--force-reinstall","--prefer-binary","https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-any.whl")
+                pip_install("--force-reinstall","--prefer-binary","https://files.pythonhosted.org/packages/1e/2c/af22cd797fc368a9f098ed03015730e6568b884fe67f9940793d944a4b7b/bitsandbytes-0.41.1-py3-none-any.whl")
             except:
                 print("Bitsandbytes 0.41.1 installation failed")
                 print("Some features such as 8bit optimizers will be unavailable")
@@ -347,7 +347,7 @@ def print_bitsandbytes_installation_error(err):
     print("cd ../..")
     print("# WINDOWS ONLY: ")
     print(
-        "pip install --prefer-binary --force-reinstall https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-any.whl")
+        "pip install --prefer-binary --force-reinstall https://files.pythonhosted.org/packages/1e/2c/af22cd797fc368a9f098ed03015730e6568b884fe67f9940793d944a4b7b/bitsandbytes-0.41.1-py3-none-any.whl")
     print("#######################################################################################################")
 
 def print_xformers_installation_error(err):
@@ -388,7 +388,7 @@ def print_launch_errors(launch_errors):
     print("activate")
     print("cd ../..")
     print("pip install -r ./extensions/sd_dreambooth_extension/requirements.txt")
-    print("pip install --prefer-binary --force-reinstall https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-any.whl")
+    print("pip install --prefer-binary --force-reinstall https://files.pythonhosted.org/packages/1e/2c/af22cd797fc368a9f098ed03015730e6568b884fe67f9940793d944a4b7b/bitsandbytes-0.41.1-py3-none-any.whl")
     print("#######################################################################################################")
 
 
